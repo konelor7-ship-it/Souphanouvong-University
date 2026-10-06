@@ -1,0 +1,210 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <!-- ข้อมูลพื้นฐานของหน้าเว็บและไฟล์ที่ใช้ตกแต่ง/เพิ่มการทำงาน -->
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="theme-color" content="#f5f4ee">
+    <meta name="description" content="Discover learning, research, and campus life at Souphanouvong University in Luang Prabang, Laos.">
+    <title>Souphanouvong University | Learn with purpose</title>
+    <!-- เชื่อมไฟล์ CSS สำหรับรูปแบบ และ JavaScript สำหรับการทำงานของหน้าเว็บ -->
+    <link rel="icon" type="image/x-icon" href="img/Logo.jpeg">
+    <link rel="stylesheet" href="style.css">
+    <script src="script.js" defer></script>
+</head>
+<body>
+    <!-- ลิงก์ข้ามเมนู ช่วยให้ผู้ใช้คีย์บอร์ดไปยังเนื้อหาหลักได้ทันที -->
+    <a class="skip-link" href="#main">Skip to content</a>
+
+    <!-- ส่วนหัว: โลโก้ เมนูนำทาง และปุ่มสมัครเรียน -->
+    <header class="site-header">
+        <a class="brand" href="#home" aria-label="Souphanouvong University home">
+            <span class="brand-mark" aria-hidden="true">
+                <img src="img/Logo.jpeg" alt="">
+            </span>
+            <span class="brand-name">Souphanouvong<span>University</span></span>
+        </a>
+
+        <!-- เมนูสำหรับหน้าจอขนาดใหญ่ ลิงก์จะพาไปยังส่วนที่มี id ตรงกัน -->
+        <nav class="desktop-nav" aria-label="Main navigation">
+            <a href="#about">About</a>
+            <a href="#study">Study</a>
+            <a href="#campus">Campus life</a>
+            <a href="#news">News</a>
+        </nav>
+
+        <a class="header-cta" href="#admissions">Admissions <span aria-hidden="true">↗</span></a>
+
+        <!-- เมนูมือถือ: details/summary ทำให้กดเปิดหรือปิดรายการเมนูได้ -->
+        <details class="mobile-nav">
+            <summary aria-label="Open navigation menu"><span></span><span></span><span></span></summary>
+            <nav aria-label="Mobile navigation">
+                <a href="#about">About</a>
+                <a href="#study">Study</a>
+                <a href="#campus">Campus life</a>
+                <a href="#news">News</a>
+                <a href="#admissions">Admissions</a>
+            </nav>
+        </details>
+    </header>
+
+    <!-- เนื้อหาหลักของหน้าเว็บ -->
+    <main id="main">
+        <!-- ส่วนเปิดหน้า: ข้อความแนะนำมหาวิทยาลัยและปุ่มลัด -->
+        <section class="hero" id="home" aria-labelledby="hero-title">
+            <div class="hero-shade"></div>
+            <div class="hero-content">
+                <p class="eyebrow eyebrow-light"><span></span> Luang Prabang, Lao PDR</p>
+                <h1 id="hero-title">Find your path.<br><em>Shape what comes next.</em></h1>
+                <p class="hero-copy">A place to grow your knowledge, discover your strengths, and make a difference in the world around you.</p>
+                <div class="hero-actions">
+                    <a class="button button-gold" href="#study">Explore programs <span aria-hidden="true">↗</span></a>
+                    <a class="text-link text-link-light" href="#about">Get to know us <span aria-hidden="true">↓</span></a>
+                </div>
+            </div>
+            <p class="hero-note">Learning rooted in place. Ideas open to the world.</p>
+            <div class="hero-scroll" aria-hidden="true"><span></span> Scroll to explore</div>
+        </section>
+
+        <!-- แนะนำมหาวิทยาลัยและแนวทางการเรียนรู้ -->
+        <section class="intro section-pad" id="about" aria-labelledby="about-title">
+            <div class="section-kicker"><span>01</span> A university with purpose</div>
+            <div class="intro-grid">
+                <h2 id="about-title">Knowledge that<br><em>moves us forward.</em></h2>
+                <div class="intro-copy">
+                    <p class="lead">At Souphanouvong University, education is connected to the people, culture, and possibilities of northern Laos.</p>
+                    <p>We bring students and educators together to ask thoughtful questions, build practical skills, and contribute to a more vibrant future for our communities.</p>
+                    <a class="text-link" href="#campus">Discover university life <span aria-hidden="true">↗</span></a>
+                </div>
+            </div>
+            <div class="values-row" aria-label="Our approach">
+                <div><span class="value-number">01</span><span>Curious by nature</span></div>
+                <div><span class="value-number">02</span><span>Grounded in community</span></div>
+                <div><span class="value-number">03</span><span>Ready for what’s next</span></div>
+            </div>
+        </section>
+
+        <!-- สาขาวิชาที่เปิดให้ผู้สนใจสำรวจ -->
+        <section class="study section-pad" id="study" aria-labelledby="study-title">
+            <div class="section-kicker"><span>02</span> Find your direction</div>
+            <div class="section-heading-row">
+                <div>
+                    <h2 id="study-title">Make room for<br><em>what inspires you.</em></h2>
+                    <p class="section-intro">Explore fields of study that connect ideas with real opportunities.</p>
+                </div>
+                <a class="text-link" href="#admissions">How to apply <span aria-hidden="true">↗</span></a>
+            </div>
+            <div class="program-grid">
+                <article class="program-item">
+                    <span class="program-index">01 / PEOPLE</span>
+                    <h3>Education &amp;<br>Languages</h3>
+                    <p>Build the communication and teaching skills that help knowledge travel further.</p>
+                    <a href="#admissions" aria-label="Explore Education and Languages admissions">Explore area <span aria-hidden="true">↗</span></a>
+                </article>
+                <article class="program-item">
+                    <span class="program-index">02 / IDEAS</span>
+                    <h3>Business &amp;<br>Tourism</h3>
+                    <p>Understand enterprise, responsible tourism, and the changing regional economy.</p>
+                    <a href="#admissions" aria-label="Explore Business and Tourism admissions">Explore area <span aria-hidden="true">↗</span></a>
+                </article>
+                <article class="program-item">
+                    <span class="program-index">03 / MAKING</span>
+                    <h3>Engineering<br>&amp; Technology</h3>
+                    <p>Turn creative problem-solving into practical skills for a connected world.</p>
+                    <a href="#admissions" aria-label="Explore Engineering and Technology admissions">Explore area <span aria-hidden="true">↗</span></a>
+                </article>
+                <article class="program-item">
+                    <span class="program-index">04 / LAND</span>
+                    <h3>Agriculture &amp;<br>Environment</h3>
+                    <p>Study the living systems and sustainable practices that shape our shared future.</p>
+                    <a href="#admissions" aria-label="Explore Agriculture and Environment admissions">Explore area <span aria-hidden="true">↗</span></a>
+                </article>
+            </div>
+            <p class="program-note">Program availability and entry requirements may vary. Contact the university for current details.</p>
+        </section>
+
+        <!-- ข้อมูลเกี่ยวกับชีวิตในรั้วมหาวิทยาลัยและสถานที่ตั้ง -->
+        <section class="campus" id="campus" aria-labelledby="campus-title">
+            <div class="campus-art" role="img" aria-label="The university's scenic surroundings in northern Laos"></div>
+            <div class="campus-copy">
+                <div class="section-kicker section-kicker-light"><span>03</span> Life beyond the lecture hall</div>
+                <h2 id="campus-title">A campus shaped<br>by <em>where we are.</em></h2>
+                <p>Set in Luang Prabang, university life is part of a place with a deep cultural heritage and a close relationship with its natural surroundings.</p>
+                <p>Find your people through student activities, shared projects, and the everyday discoveries that make a campus feel like your own.</p>
+                <a class="text-link text-link-light" href="#contact">Explore campus life <span aria-hidden="true">↗</span></a>
+            </div>
+        </section>
+
+        <!-- ขั้นตอนเบื้องต้นสำหรับผู้สนใจสมัครเรียน -->
+        <section class="admissions section-pad" id="admissions" aria-labelledby="admissions-title">
+            <div class="section-kicker"><span>04</span> Your next chapter</div>
+            <div class="admissions-grid">
+                <div class="admissions-heading">
+                    <h2 id="admissions-title">Start with<br><em>a question.</em></h2>
+                    <p>Thinking about studying with us? Get in touch with the university to learn about current programs, entry requirements, and application dates.</p>
+                    <a class="button button-dark" href="#contact">Contact admissions <span aria-hidden="true">↗</span></a>
+                </div>
+                <div class="admissions-steps">
+                    <div><span>01</span><div><h3>Explore</h3><p>Find a subject area that fits your interests and goals.</p></div></div>
+                    <div><span>02</span><div><h3>Ask</h3><p>Check entry requirements and timelines with the university.</p></div></div>
+                    <div><span>03</span><div><h3>Apply</h3><p>Prepare your documents and follow the current application guidance.</p></div></div>
+                </div>
+            </div>
+        </section>
+
+        <!-- ข่าวสารและความเคลื่อนไหวของมหาวิทยาลัย -->
+        <section class="news section-pad" id="news" aria-labelledby="news-title">
+            <div class="section-kicker"><span>05</span> Around the university</div>
+            <div class="news-heading">
+                <h2 id="news-title">The latest <em>from SU.</em></h2>
+                <p>Ideas, people, and moments from our university community.</p>
+            </div>
+            <div class="news-list">
+                <article class="news-item">
+                    <span class="news-tag">RESEARCH &amp; COMMUNITY</span>
+                    <h3>Learning from the region to help shape its future</h3>
+                    <a href="#contact" aria-label="Ask the university about research and community updates">↗</a>
+                </article>
+                <article class="news-item">
+                    <span class="news-tag">STUDENT LIFE</span>
+                    <h3>New perspectives begin with a shared conversation</h3>
+                    <a href="#contact" aria-label="Ask the university about student life updates">↗</a>
+                </article>
+                <article class="news-item">
+                    <span class="news-tag">ON CAMPUS</span>
+                    <h3>Discover the people and ideas moving SU forward</h3>
+                    <a href="#contact" aria-label="Ask the university about campus updates">↗</a>
+                </article>
+            </div>
+            <p class="news-note">For current announcements and event information, please contact the university.</p>
+        </section>
+    </main>
+
+    <!-- ส่วนท้าย: สถานที่ตั้ง ช่องทางติดต่อ และลิงก์กลับไปด้านบน -->
+    <footer class="site-footer" id="contact">
+        <div class="footer-main">
+            <div class="footer-brand-block">
+                <a class="brand brand-footer" href="#home" aria-label="Souphanouvong University home">
+                    <span class="brand-mark" aria-hidden="true">
+                        <img src="img/Logo.jpeg" alt="">
+                    </span>
+                    <span class="brand-name">Souphanouvong<span>University</span></span>
+                </a>
+                <p>Curiosity takes us places.<br>Let’s see where it takes you.</p>
+            </div>
+            <div class="footer-contact">
+                <span class="footer-label">Visit</span>
+                <p>Luang Prabang<br>Lao People’s Democratic Republic</p>
+            </div>
+            <div class="footer-contact">
+                <span class="footer-label">Get in touch</span>
+                <p>For information about study and admissions, please contact Souphanouvong University directly.</p>
+                <a href="#admissions">Admissions information <span aria-hidden="true">↗</span></a>
+            </div>
+            <a class="back-top" href="#home" aria-label="Back to top">↑</a>
+        </div>
+        <!-- ข้อมูลท้ายหน้า เช่น ลิขสิทธิ์และสถานที่ตั้ง -->
+        <div class="footer-bottom"><span>© Souphanouvong University</span><span>Luang Prabang · Lao PDR</span></div>
+    </footer>
+</body>
+</html>
